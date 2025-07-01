@@ -1,0 +1,69 @@
+# MLB Betting Analytics Environment Configuration
+# Copy this file to .env and fill in your values
+
+# =============================================================================
+# ODDS API CONFIGURATION (CRITICAL - 500 CALLS/MONTH LIMIT)
+# =============================================================================
+# Get your free API key from: https://the-odds-api.com/
+# Free tier: 500 calls/month
+# Our system uses aggressive daily caching to stay under this limit
+ODDS_API_KEY=your_odds_api_key_here
+
+# =============================================================================
+# DATABASE CONFIGURATION
+# =============================================================================
+# DuckDB database file location (local analytics database)
+DUCKDB_PATH=data/mlb_betting.duckdb
+
+# =============================================================================
+# API USAGE & CACHING SETTINGS
+# =============================================================================
+# Conservative daily API call limit (500 calls / 31 days = ~16 per day)
+DAILY_API_LIMIT=16
+
+# Cache directory for storing daily API responses
+CACHE_DIR=data/cache
+
+# Days to keep cache files before cleanup
+CACHE_RETENTION_DAYS=7
+
+# =============================================================================
+# DEVELOPMENT SETTINGS
+# =============================================================================
+# Set to True for development mode (more logging, debug info)
+DEBUG=False
+
+# FastAPI server settings
+API_HOST=localhost
+API_PORT=8000
+
+# Frontend development server
+FRONTEND_PORT=5173
+
+# =============================================================================
+# MACHINE LEARNING SETTINGS
+# =============================================================================
+# Model training settings
+MODEL_RETRAIN_DAYS=7
+FEATURE_LOOKBACK_DAYS=30
+
+# Risk management
+MAX_DAILY_BETS=5
+MIN_CONFIDENCE_THRESHOLD=0.7
+
+# =============================================================================
+# LOGGING CONFIGURATION
+# =============================================================================
+LOG_LEVEL=INFO
+LOG_FILE=logs/mlb_betting.log
+
+# =============================================================================
+# USAGE NOTES
+# =============================================================================
+# 1. The system is designed to work with the free 500 API calls/month limit
+# 2. Daily caching ensures we stay under ~16 calls per day
+# 3. Cache files are automatically cleaned up after 7 days
+# 4. If daily limit is reached, system uses cached data only
+# 5. API usage is tracked and displayed in the dashboard
+# 6. Historical MLB data comes from pybaseball (no API limits)
+# 7. Only live odds and props use the external API 

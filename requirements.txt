@@ -1,0 +1,135 @@
+# Core Data Science Libraries
+pandas
+numpy
+scip
+scikit-learn
+
+# Database and Storage
+duckdb
+
+# Machine Learning and Advanced Analytics
+xgboost
+lightgbm
+catboost
+optuna
+hyperopt
+
+# Sports Analytics
+pybaseball
+sports-betting
+
+# Web Framework and API
+fastapi
+uvicorn
+pydantic
+python-multipart
+
+# HTTP Requests and API Integration
+requests
+aiohttp
+
+# Data Visualization and Plotting
+matplotlib
+seaborn
+plotly
+
+# Scheduling and Automation
+schedule
+APScheduler
+
+# Notifications and Alerts
+
+# Environment and Configuration
+python-dotenv
+pyyaml
+
+# Utilities and Helper Libraries
+tqdm
+joblib
+pathlib2
+python-dateutil
+
+# Performance and Monitoring
+psutil
+memory-profiler
+
+# Data Quality and Validation
+great-expectations
+pandera
+
+# Financial and Risk Management
+QuantLib
+empyrical
+
+# Statistical Analysis
+statsmodels
+pingouin
+
+# Time Series Analysis
+prophet
+arch
+
+# Optimization
+cvxpy
+pulp
+
+# Testing
+pytest
+pytest-cov
+pytest-asyncio
+
+# Development Tools
+black
+flake8
+mypy
+
+# Documentation
+sphinx
+sphinx-rtd-theme
+
+# Jupyter and Notebooks
+jupyter
+ipykernel
+nbconvert
+
+# Additional ML Libraries
+imbalanced-learn
+feature-engine
+shap
+lime
+
+# Time and Date Handling
+pytz
+arrow
+
+# Parallel Processing
+dask
+joblib
+
+# Web Scraping (if needed)
+beautifulsoup4
+selenium
+
+# Caching
+redis
+diskcache
+
+# Logging and Monitoring
+structlog
+sentry-sdk
+
+# Data Streaming
+kafka-python
+confluent-kafka
+
+# Cloud Storage (optional)
+boto3
+google-cloud-storage
+
+# Security
+cryptography
+bcrypt
+
+# Configuration Management
+hydra-core
+omegaconf
